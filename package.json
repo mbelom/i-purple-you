@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "axios": "^0.27.2",
-    "inquirer": "^8.2.4"
-  }
-}
