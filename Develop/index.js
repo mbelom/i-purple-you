@@ -2,7 +2,7 @@
 
 // Variables and dependencies declared 
 const fs = require("fs");
-const util = require("util");
+const utils = require("utils");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown")
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -73,7 +73,7 @@ function promptUser(){
 } 
 
 // Async function using util.promisify 
-  async function init() {
+async function init() {
     try {
         // Ask user questions and generate responses
         const answers = await promptUser();
@@ -84,6 +84,6 @@ function promptUser(){
     }   catch(err) {
         console.log(err);
     }
-  }
-  
-  init();
+}
+
+init();
