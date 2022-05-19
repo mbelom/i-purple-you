@@ -4,7 +4,7 @@
 const fs = require("fs");
 const utils = require("utils");
 const inquirer = require("inquirer");
-const generateMarkdown = require("./Develop/utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown")
 const writeFileAsync = utils.promisify(fs.writeFile);
 
 //Prompt questions to render the README.md
