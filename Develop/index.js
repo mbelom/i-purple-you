@@ -13,14 +13,14 @@
 //init();
 
 
-// Declaring the variables and dependencies
+// Variables and dependencies declared 
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown")
 const writeFileAsync = util.promisify(fs.writeFile);
 
-//Prompt user questions to render the README.md
+//Prompt questions to render the README.md
 function promptUser(){
     return inquirer.prompt([
         {
