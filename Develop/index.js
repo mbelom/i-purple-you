@@ -1,16 +1,3 @@
-// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
-//const questions = [];
-
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-//function init() {}
-
-// Function call to initialize app
-//init();
 
 
 // Variables and dependencies declared 
@@ -90,9 +77,9 @@ function promptUser(){
     try {
         // Ask user questions and generate responses
         const answers = await promptUser();
-        const generateMarkdown= generateMarkdown(answers);
+        const generateContent= generateMarkdown(answers);
         // Write new README.md to dist directory
-        await writeFileAsync('./dist/README.md', generateMarkdown);
+        await writeFileAsync('./dist/README.md', generateContent);
         console.log('README.md successfully written');
     }   catch(err) {
         console.log(err);
