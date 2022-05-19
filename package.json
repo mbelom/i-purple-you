@@ -9,12 +9,16 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mbelom/i-purple-you.git",
-  "author": "Marissa Belombre",
-  "license": "ISC",
-  "homepage": "https://github.com/mbelom/i-purple-you",
+    "author": "Marissa Belombre",
+    "license": "ISC",
+    "homepage": "https://github.com/mbelom/i-purple-you",
+    "dependencies": {
+      "axios": "^0.27.2",
+      "inquirer": "^8.2.4"
+    }
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "inquirer": "^8.2.4"
   }
-}
 }
