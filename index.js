@@ -2,7 +2,7 @@
 
 // Variables and dependencies declared 
 const fs = require("fs");
-const utils = require("utils");
+const utils = require("./Develop/utils");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown")
 const writeFileAsync = utils.promisify(fs.writeFile);
